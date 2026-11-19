@@ -17,7 +17,7 @@ public class Medicament {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    @Column(unique = true)
     private String nom;     // nom commercial
     private String dci;     // principe actif (lien avec le CSV et les allergies)
     private String forme;
